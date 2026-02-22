@@ -1,88 +1,84 @@
-# InvoiceBot 💰
+# invoice-reminder-bot
 
-> **Invoice Reminder Bot** - Automated follow-up bot for unpaid invoices. Integrates with Stripe and PayPal to track unpaid invoices and send reminder emails.
+## Detailed Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yksanjo/InvoiceBot)
-[![GitHub stars](https://img.shields.io/github/stars/yksanjo/InvoiceBot?style=social)](https://github.com/yksanjo/InvoiceBot)
+invoice-reminder-bot is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-**InvoiceBot** automates the tedious task of following up on unpaid invoices. Set it and forget it - the bot will send friendly reminders at customizable intervals, helping you get paid faster.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- 💰 Stripe invoice tracking
-- 💳 PayPal payment tracking
-- 📧 Automated reminder emails
-- ⏰ Customizable reminder schedule
-- 📊 Payment analytics
-- 🔔 Multi-channel notifications
+## Solution Overview
 
-## Installation
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-```bash
-pip install -r requirements.txt
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-## Configuration
+## Getting Started
 
-Create a `.env` file:
+### Prerequisites
 
-```env
-# Stripe Configuration
-STRIPE_SECRET_KEY=sk_live_your_key
-STRIPE_WEBHOOK_SECRET=whsec_your_secret
+- Git
+- Project runtime/toolchain for this repo
 
-# PayPal Configuration (optional)
-PAYPAL_CLIENT_ID=your_client_id
-PAYPAL_CLIENT_SECRET=your_client_secret
+### Local Setup
 
-# Email Configuration
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASSWORD=your-app-password
-
-# Reminder Settings
-REMINDER_DAYS=7,14,21  # Days after due date to send reminders
-MAX_REMINDERS=3
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-### Start Monitoring
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```bash
-python reminder_bot.py
-```
+## Quality Standards
 
-### Check Invoices Once
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```bash
-python reminder_bot.py --check-once
-```
+## Security
 
-### Send Manual Reminder
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-```bash
-python reminder_bot.py --remind invoice_id
-```
+## Contributing
 
-### View Unpaid Invoices
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-```bash
-python reminder_bot.py --list-unpaid
-```
+## Roadmap
 
-## Reminder Schedule
+Track upcoming milestones, technical debt, and planned feature work.
 
-Default reminder schedule:
-- 7 days after due date: First reminder
-- 14 days after due date: Second reminder
-- 21 days after due date: Final reminder
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT License
-
-
+This project is released under the MIT License.
