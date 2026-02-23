@@ -1,5 +1,12 @@
 # invoice-reminder-bot
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/invoice-reminder-bot/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/invoice-reminder-bot/actions)
+![License](https://img.shields.io/github/license/yksanjo/invoice-reminder-bot)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/invoice-reminder-bot)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/invoice-reminder-bot)
+
 ## Detailed Description
 
 invoice-reminder-bot is maintained as an industry-grade software project with production-ready engineering practices.  
